@@ -11,5 +11,7 @@
   <button (click)="calcularIMC()">Calcular</button>
   <div *ngIf="resultado">
     <p>Seu IMC é: {{ resultado.toFixed(2) }}</p>
+    <p>Classificação: {{ classificacao }}</p>
+    <img *ngIf="imagem" [src]="imagem" alt="Imagem da Classificação do IMC" />
   </div>
 </div>
